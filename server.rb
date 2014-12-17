@@ -1,5 +1,5 @@
 require 'sinatra'
-require "sinatra/reloader" if development?
+# require "sinatra/reloader" if development?
 
 require_relative './db/connection'
 require_relative './lib/category'
