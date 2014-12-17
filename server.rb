@@ -1,7 +1,10 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
+
 require_relative './db/connection'
 require_relative './lib/category'
 require_relative './lib/contact'
+
 require 'active_support'
 
 after do
