@@ -8,12 +8,8 @@ after do
   ActiveRecord::Base.connection.close
 end
 
-# before do
-#   content_type :json
-# end
-
-get '/' do 
-  "Hello World!"
+before do
+  content_type :json
 end
 
 get("/categories") do
